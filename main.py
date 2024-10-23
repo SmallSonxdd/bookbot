@@ -30,7 +30,8 @@ def count_characters(input_text):
 
 def print_report_of_character_count(dict_of_charater_their_count):
     for key in dict_of_charater_their_count:
-        print(f'The {key} character was found {dict_of_charater_their_count[key]} times')
+        if key.isalpha() == True:
+            print(f"The '{key}' character was found {dict_of_charater_their_count[key]} times")
     pass
 
 main()
